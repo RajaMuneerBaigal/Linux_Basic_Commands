@@ -1,0 +1,60 @@
+Hi, this is raju.
+
+I am learning ubuntu and linux basic commands.
+
+As far as I know Linux has a kernel which is considered as a heart of the Linux operating system.
+It talks to operating system, applications etc.
+
+Some of the basic commands I have learned so far are:
+
+pwd			                 : present working directory
+
+ls			                 : list all files/folders in current working directory
+
+cd dirname		                 : change directory to a particular directory 
+
+cd ..			                 : to go to previous directory
+
+touch			                 : touch command is used to create files
+
+mkdir			                 : make directory
+
+mv ../fname .		                 : to move a file from previous folder to current working directory
+
+rm _filename_		                 : to remove a file with name 
+
+cd~ or cd		                 : to goto home directory
+
+sudo			                 : to run any command as administrator
+
+sudo apt-get update		         : to install any updates on ubuntu or linux
+
+man				         : man means manual, use with commands to learn more
+
+apt-get install pckg                     : to install any softwares on ubuntu/linux pckg represents package name
+
+cp source dest                           : copy file from source to destination
+
+sudo scp i keyPname source destination   : scp command is used to copy any file from server to local or local to server but it will only be used in local server
+e.g sudo scp -i mykeypair.pem downloads/raju.png ubuntu@ec2-54-72-184-240.eu-west-1.compute.amazonaws.com:/home/ubuntu/my_folder
+
+
+
+touch file-{1..10}.txt                   : to create multiple files
+
+rm file-{1..10}.txt                      : to remove multiple files
+
+
+free					 : free command is used to check how 
+					   how much memory is used (Ram)
+
+top					 : top command is used to check which processes are running in our system
+
+
+df -H					 :  df -H is used to check how much disk is free and how much is utilized
+
+awk					 : awk is a scripting language used to manipulate files or outputs, used for segmenting outputs i.e we can display columns
+
+df -H | awk '{print $1}'		 : the output of df -H will be input to awk using pipe(|) and awk will print the first column 
+
+

@@ -10,7 +10,7 @@ Some of the basic commands I have learned so far are:
 
 
 apt					 : apt stands for advance packaging tool, it can be used with different commands like apt update, apt install etc .
-					   it is necessary to update before installing any packages
+					   it is necessary to update before installing any packages. i.e apt update and then apt install
 
 apt list				 : apt list shows what packages are installed on our ubuntu/linux system
 

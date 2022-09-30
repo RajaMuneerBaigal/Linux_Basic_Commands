@@ -7,6 +7,13 @@ It talks to operating system, applications etc.
 
 Some of the basic commands I have learned so far are:
 
+
+
+apt					 : apt stands for advance packaging tool, it can be used with different commands like apt update, apt install etc .
+					   it is necessary to update before installing any packages
+
+apt list				 : apt list shows what packages are installed on our ubuntu/linux system
+
 pwd			                 : present working directory
 
 ls			                 : list all files/folders in current working directory
@@ -48,7 +55,7 @@ rm file-{1..10}.txt                      : to remove multiple files
 free					 : free command is used to check how 
 					   how much memory is used (Ram)
 
-top					 : top command is used to check which processes are running in our system
+top					 : top command is used to check which processes are running in our RAM. 
 
 
 df -H					 :  df -H is used to check how much disk is free and how much is utilized
@@ -56,5 +63,12 @@ df -H					 :  df -H is used to check how much disk is free and how much is utili
 awk					 : awk is a scripting language used to manipulate files or outputs, used for segmenting outputs i.e we can display columns
 
 df -H | awk '{print $1}'		 : the output of df -H will be input to awk using pipe(|) and awk will print the first column 
+
+
+crontab					 : a file where we see what is being scheduled
+
+crontab -l				 : to list all the cron jobs in our system
+
+crontab -e				 : to edit a crontab file
 
 

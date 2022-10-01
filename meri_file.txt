@@ -51,6 +51,7 @@ touch file-{1..10}.txt                   : to create multiple files
 
 rm file-{1..10}.txt                      : to remove multiple files
 
+rm textfiles*				 : to remove all files with string textfiles. i.e this will remove all files with textfiles as names in current directory 
 
 free					 : free command is used to check how 
 					   how much memory is used (Ram)

@@ -83,6 +83,14 @@ mv file_name new_file                    : to rename a file
 
 mv file_name /home/raju/new_file         : to move file to new directory with a new name
 
+cat filename				 : to display the content of small file
+
+less filename				 : to list the contents of long file in an interactive way
+
+head -5 filename			 : to display the first five lines of a file
+
+tail -5 filename			 : to display the last five lines of a file
+
 
 
 

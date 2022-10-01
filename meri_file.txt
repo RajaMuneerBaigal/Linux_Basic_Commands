@@ -72,3 +72,25 @@ crontab -l				 : to list all the cron jobs in our system
 crontab -e				 : to edit a crontab file
 
 
+rm -r directory name                     : to remove directory recursively and all its content
+
+ls -1                                    : to list files/folder by single line
+
+mv dir_name new_dir                      : to rename a directory
+
+mv file_name new_file                    : to rename a file
+
+mv file_name /home/raju/new_file         : to move file to new directory with a new name
+
+
+
+
+
+Shortcuts:
+
+ctrl+shift+v                            : to paste
+
+ctrl+c                                  : to copy
+
+ctrl+l                                  : to clear screen
+

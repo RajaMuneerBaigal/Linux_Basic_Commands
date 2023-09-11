@@ -11,7 +11,7 @@ Some of the basic commands I have learned so far are:
 
 apt					 : apt stands for advance packaging tool, it can be used with different commands like apt update, apt install etc .
 					   it is necessary to update before installing any packages. i.e apt update and then apt install
-
+ 
 apt list				 : apt list shows what packages are installed on our ubuntu/linux system
 
 pwd			                 : present working directory
@@ -92,6 +92,8 @@ head -5 filename			 : to display the first five lines of a file
 tail -5 filename			 : to display the last five lines of a file
 
 
+=============================================================================
+
 
 
 
@@ -103,3 +105,67 @@ ctrl+c                                  : to copy
 
 ctrl+l                                  : to clear screen
 
+======================================================================
+
+Udemy Linux Commands:
+
+
+Basic Commands:
+
+1- date            :    to print current date
+2- ncal		   :	prints the calendar
+3- cal		   :    prints the calendar 
+4- clear	   :    clears the screen
+5- sort		   :    takes a file as an arguments and sort the contents inside alphabetically syntax: sort hello.txt
+6- type		   :    type commans will tell us the type of a command. syntax : type echo , type mkdir 
+7- which	   :    tells where a command is located. i.e in simple words file name where a command is defined. Syntax: which echo
+8- man		   :    man command to print the manual about any command. syntax: man ls , man mkdir etc. man contains manual for 8 different command type. i.e system type, user type and for file types. i.e man -k ls. Furthermore to read a manual for a command we can use space key to go page by page forward. B for backward
+9- help            :    help command used to print out help regarding anything if there is no manual for it.
+
+
+
+
+
+Arrow Keys:
+1- left and right arrow keys are using to move the cursor
+2- Up arrow cycles through the previous commands I used
+3- Down arrow to use the latest commands
+
+Up and Down keys are not actually that much useful for short cuts but for long commands it can come in handy.
+
+
+Arguments or Parameters in Linux:
+
+we can use arguments with commands as most commands use arguments.i.e 
+echo hello   : here hello is an argument to echo command
+ncal 2021    : here 2021 is an arument to ncal command. It will print whole 20201 calendar.
+
+Its not necessary that it will always accept one argument. some commands require more arguments.
+
+The basic structure of a commands is:
+
+command options arguments
+
+The order of arguments also matters in some commands but not necessarily in all of them.
+
+
+options change the behaviour of commands. i.e
+ncal -j		 : will print current month with days in 1,2,3 format. i.e it will print the day according to 365 days and will highlight which day of the year it is.
+ncal -h		 : will print the current month without highlighting the current day.
+ncal 2022 -j	 : will print the whole year in 365 days format and highlights the current date
+
+
+We can combine multiple options: like
+ncal -3hMj       : will print the the previous current next month with monday as first day and with no highlighting
+
+
+====================================================================
+
+Types of Commands:
+There are basically four type of commands:
+- An executable program usually stored in /bin  /usr/bin or usr/local/bin. These are compile binary files hence bin
+- A built in shell command. Commands part of shell
+- A shell function
+- An alias  is custom user command
+
+We can find the types of commands using type and then followed by command

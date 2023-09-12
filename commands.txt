@@ -91,6 +91,29 @@ head -5 filename			 : to display the first five lines of a file
 
 tail -5 filename			 : to display the last five lines of a file
 
+script filename                          : to recored every command you type and its output and save it in a file. very handy if you keep forgetting commands you runned in your linux.
+
+join file1 file2                         : join two files depending upon the similarity between them
+
+split filename taggingname               : split larger files into smaller files. default size for smaller size file is 1000 lines. used with flags -n to specify how many small files you want to create of large file
+
+
+diff  file1 file2                        : used to show the difference between two files. used with flags -d to show which lines needed to deleted to make the identical, -c the changes to be made in file1 and file2 to make them identical
+
+comm file1 file2                         : used to compare two sorted files. The first column in output shows element only in file1 , second column shows the only element in file2, third line shows common elements.
+
+cmp file1 file2                          : used to compare files. outputs the line number in which there is difference between two files.
+
+wc filename                              : used to count the words in a file along with spaces. use with flags. i.e -l lines , -w words , -L longest , -m character counts
+
+cut filename                             : used to cut portion of a file. flags -f and -c. -f print only these fields, -c select only these character
+
+paste file1 file2                         : used to join two files together. it displays in column form. useful to see difference as well
+
+grep -n apple file1 file2                : used to search out a field in a file or files. -c count of occurences , -l display list of files which contains keyword/pattern/word, -n display line number along lines containing a pattern
+
+aspell check filename                    : to check a spelling mistake in a word in a file.
+
 
 =============================================================================
 
@@ -112,15 +135,18 @@ Udemy Linux Commands:
 
 Basic Commands:
 
-1- date            :    to print current date
-2- ncal		   :	prints the calendar
-3- cal		   :    prints the calendar 
-4- clear	   :    clears the screen
-5- sort		   :    takes a file as an arguments and sort the contents inside alphabetically syntax: sort hello.txt
-6- type		   :    type commans will tell us the type of a command. syntax : type echo , type mkdir 
-7- which	   :    tells where a command is located. i.e in simple words file name where a command is defined. Syntax: which echo
-8- man		   :    man command to print the manual about any command. syntax: man ls , man mkdir etc. man contains manual for 8 different command type. i.e system type, user type and for file types. i.e man -k ls. Furthermore to read a manual for a command we can use space key to go page by page forward. B for backward
-9- help            :    help command used to print out help regarding anything if there is no manual for it.
+1-  date            :    to print current date
+2-  ncal            :	prints the calendar
+3-  cal		    :    prints the calendar 
+4-  clear	    :    clears the screen
+5-  sort	    :    takes a file as an arguments and sort the contents inside alphabetically syntax: sort hello.txt
+6-  type	    :    type commans will tell us the type of a command. syntax : type echo , type mkdir 
+7-  which	    :    tells where a command is located. i.e in simple words file name where a command is defined. Syntax: which echo
+8-  man		    :    man command to print the manual about any command. syntax: man ls , man mkdir etc. man contains manual for 8 different command type. i.e system type, user type and for file types. i.e man -k ls. Furthermore to read a manual for a command we can use space key to go page by page forward. B for backward
+9-  help            :    help command used to print out help regarding anything if there is no manual for it.
+10- who             :    who command is used to see user and system info. i.e who is logged in, when did the last system boot etc. used with options
+11- login           :    used to login as a different user
+12- passwd          :    used to set a password for the current user you are logged in as
 
 
 
@@ -169,3 +195,18 @@ There are basically four type of commands:
 - An alias  is custom user command
 
 We can find the types of commands using type and then followed by command
+
+
+=====================================================================
+
+Process Related Commands:
+ - ps             : command to display the characteristics of processes
+
+   Usage:
+     ps -f        : will show a full listing of all the processes
+     ps -u user   : will show a listing of processes run by user
+     ps -a        : processes of all users
+     ps -e        : processess including user and system
+
+   ps -fu raju    : will list all processing run by raju in full listing mode
+    

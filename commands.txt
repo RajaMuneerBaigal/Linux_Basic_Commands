@@ -114,7 +114,12 @@ grep -n apple file1 file2                : used to search out a field in a file 
 
 aspell check filename                    : to check a spelling mistake in a word in a file.
 
+nl filename                              : to list the contents in a file with an index number. useful to write it to another file in with an index starting from 1
 
+gpg -c filename                          : to encrypt a file
+
+
+nautilus directorypath                    : to open any directory from terminal. i.e nautilus Desktop
 =============================================================================
 
 

@@ -1,9 +1,3 @@
-Hi, this is raju.
-
-I am learning ubuntu and linux basic commands.
-
-As far as I know Linux has a kernel which is considered as a heart of the Linux operating system.
-It talks to operating system, applications etc.
 
 Some of the basic commands I have learned so far are:
 

@@ -360,17 +360,18 @@ Linux provides three commands to copy,reomve or move files
 -------------------------------------------------    
 - **rm**               :  used to remove files/directories
 
-  Syntax: 
-    rm file1 
-    rm -r foldername
-  Usage:
+  Syntax:  
+    rm file1   
+    rm -r foldername  
+  Usage:  
     rm file.txt , rm file1.txt file2.txt file3.txt , rm file*, rm -r ~/Linux , rm -d folder , rmdir folder , rm -ri folder
+  
 -------------------------------------------------    
-- **mv**               : used to mv files/folders to another file/folder
-  Syntax: 
-    mv sourcefile destinationfile
-    mv sourcefolder destinationfolder
-  Usage:
+- **mv**               : used to mv files/folders to another file/folder  
+  Syntax:  
+    mv sourcefile destinationfile  
+    mv sourcefolder destinationfolder  
+  Usage:  
     mv file1.txt file2.txt , mv file1 file2 file3 finalfile, mv ~/folder ~/myfolder/, file pic.png
     
 ======================================================================

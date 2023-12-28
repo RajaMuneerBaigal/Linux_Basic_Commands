@@ -66,7 +66,7 @@ ncal -3hMj       : will print the the previous current next month with monday as
 
 ### Some of the basic commands:
 
-<pre>
+
 - apt					  : apt stands for advance packaging tool, it can be used with different commands like apt update, apt install etc .
 					   it is necessary to update before installing any packages. i.e apt update and then apt install
  
@@ -188,7 +188,7 @@ starting from 1
 
 - login                                    :    used to login as a different user
 - passwd                                   :    used to set a password for the current user you are logged in as
-</pre>
+
 =============================================================================
 
 Udemy Linux Commands:

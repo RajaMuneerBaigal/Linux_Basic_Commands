@@ -28,20 +28,21 @@ We can find the types of commands using type and then followed by command
 
 =====================================================================  
 
-**The basic structure of a commands is:**
+#### The basic structure of a commands is:
 
 **command -options arguments**
 
 -----------------------------------
-**Arguments:**
-something that we can give as an input to a command.  
-i.e echo "hello world" . Here "hello world" is an argument to command echo.   
   
-some command might take more than one arguments such as ncal july 2023. it takes july and 2023 as an year.   
+**Arguments:**
+something that we can give as an input to a command.
+<pre> i.e echo "hello world" . Here "hello world" is an argument to command echo. </pre>
+  
+some commands might take more than one argument such as ncal july 2023. it takes july and 2023 as arguments.    
 Commands use take arguments in the format they expect. I.e we cannot pass month after year so we need to be vary of that.
   
 we can use arguments with commands as most commands use arguments.i.e 
-<pre> echo hello   : here hello is an argument to echo command
+<pre>echo hello   : here hello is an argument to echo command
 ncal 2021    : here 2021 is an arument to ncal command. It will print whole 20201 calendar.
 
 It's not necessary that it will always accept one argument. some commands require more arguments.

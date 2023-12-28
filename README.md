@@ -1,5 +1,5 @@
-
-Some Important Concepts: 
+## Introduction to Linux Concepts and Commands 
+### Some Important Concepts: 
 
 **Linux Introduction:**  
 Linux is a combination of kernel and GNU components such as applications, window managers, file structures and so on. A kernel is a program that helps the interaction between computer hardware and computer applications (software).Together they make a linux Operating system.

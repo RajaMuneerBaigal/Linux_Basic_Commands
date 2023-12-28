@@ -351,31 +351,31 @@ Linux provides three commands to copy,reomve or move files
 **Commands:**
  
 - **cp**              : used to copy contents of a file/folder to another file/folder
-
-  **Syntax:** 
+    
+  **Syntax:**   
     cp sourcefilename destinationfilename
     cp -r sourcedirectory destinationdirectory
     
-  **Usage:**
+  **Usage:**   
     cp file1.txt file2.txt, cp -r ~/Learning/ MyLearning
 -------------------------------------------------    
 - **rm**               :  used to remove files/directories
 
-  **Syntax:**  
-    rm file1   
-    rm -r foldername
+  **Syntax:**      
+    rm file1      
+    rm -r foldername   
      
-  **Usage:**  
+  **Usage:**   
     rm file.txt , rm file1.txt file2.txt file3.txt , rm file*, rm -r ~/Linux , rm -d folder , rmdir folder , rm -ri folder
   
 -------------------------------------------------    
 - **mv**               : used to mv files/folders to another file/folder
        
-  **Syntax:**  
-    mv sourcefile destinationfile  
-    mv sourcefolder destinationfolder
+  **Syntax:**    
+    mv sourcefile destinationfile     
+    mv sourcefolder destinationfolder   
      
-  **Usage:**  
+  **Usage:**     
     mv file1.txt file2.txt , mv file1 file2 file3 finalfile, mv ~/folder ~/myfolder/, file pic.png
     
 ======================================================================
@@ -869,10 +869,11 @@ We can use this website to setup a cronjob syntax. https://crontab.guru/
  - **ps**             : command to display the characteristics of processes
 
    **Usage:**
+   <pre>
      ps -f        : will show a full listing of all the processes
      ps -u user   : will show a listing of processes run by user
      ps -a        : processes of all users
      ps -e        : processess including user and system
 
    ps -fu raju    : will list all processing run by raju in full listing mode
-    
+    </pre>

@@ -49,7 +49,7 @@ The order of arguments also matters in some commands but not necessarily in all 
 **Options:**
 Most of the commands in linux support options. options are generally specified with a dash and some alphabet or a word. ncal -h . options can be combined ncal -3 -h or ncal -3h
 
-options change the behaviour of commands. i.e
+options change the behaviour of commands. i.e  
 ncal -j		 : will print current month with days in 1,2,3 format. i.e it will print the day according to 365 days and will highlight which day of the
                   year it is.
 ncal -h		 : will print the current month without highlighting the current day.

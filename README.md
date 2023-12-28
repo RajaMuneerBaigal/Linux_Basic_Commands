@@ -313,11 +313,12 @@ Linux terminal provides us several commands to create files and folders. With wh
     mkdir test , mkdir ~/Linux , mkdir -p ~/Learning/Devops
   
  -------------------------------------------------   
-- **file**               : used to determine a file information 
-  Syntax: 
-    file filename
-    
-  Usage:
+- **file**               : used to determine a file information
+  
+  Syntax:   
+    file filename  
+      
+  Usage:  
     file hello.txt , file ~/hello.txt, file pic.png
     
  -------------------------------------------------
@@ -362,15 +363,18 @@ Linux provides three commands to copy,reomve or move files
 
   Syntax:  
     rm file1   
-    rm -r foldername  
+    rm -r foldername
+     
   Usage:  
     rm file.txt , rm file1.txt file2.txt file3.txt , rm file*, rm -r ~/Linux , rm -d folder , rmdir folder , rm -ri folder
   
 -------------------------------------------------    
-- **mv**               : used to mv files/folders to another file/folder  
+- **mv**               : used to mv files/folders to another file/folder
+       
   Syntax:  
     mv sourcefile destinationfile  
-    mv sourcefolder destinationfolder  
+    mv sourcefolder destinationfolder
+     
   Usage:  
     mv file1.txt file2.txt , mv file1 file2 file3 finalfile, mv ~/folder ~/myfolder/, file pic.png
     
@@ -401,69 +405,69 @@ Linux provides three commands to copy,reomve or move files
 - **less**              : will show the contents of a long file page by page in a more readable way
 
   Syntax: 
-    less filename
-    
+    less filename  
+      
   Usage:
-    less file1.txt , less /var/log/access.log
+    less file1.txt , less /var/log/access.log  
 -------------------------------------------------    
 - **head**              :  head will print the first 10 lines of a file. We can specify the lines by using -n flag. i.e head -n 100 filename
 
   Syntax: 
-    head filename 
+    head filename    
     
-  Usage:
+  Usage:   
     head mybook.txt, head -n100 mybook.txt
 -------------------------------------------------    
 - **cat**               : used to print the contents of a file or concatenate the contents of file
 
-  Syntax: 
-    cat filename
-    cat file1 file2 
-    
+  Syntax:    
+    cat filename   
+    cat file1 file2    
+       
   Usage:
     cat countries.txt, cat birds.txt mamals.txt   
 -------------------------------------------------    
 - **tac**              : reverses the output of cat. i.e prints last line first and so on
 
   Syntax: 
-    tac filename
-    tac file1 file2
-    
-  Usage:
+    tac filename   
+    tac file1 file2   
+       
+  Usage:   
     cat countries.txt, cat birds.txt mamals.txt animals.txt   
 -------------------------------------------------
 - **rev**              : rev  reverses the characters inside a file. i.e cat will be tac
 
-  Syntax: 
-    rev filename
-    rev file1 file2 
-    
-  Usage:
+  Syntax:    
+    rev filename   
+    rev file1 file2    
+       
+  Usage:   
     cat countries.txt, cat birds.txt mamals.txt 
 -------------------------------------------------    
 - **tail**             : prints the last 10 lines of a file. tail -f is used to print following lines when occur.useful when dealing with logs
-
-  Syntax: 
-    tail filename
     
-  Usage:
+  Syntax: 
+    tail filename   
+    
+  Usage:   
     tail /var/log/nginx.log , tail -f /var/log/nginx.log 
     
 -------------------------------------------------    
 - **wc**              : used to print word count or lines in a file
 
-  Syntax: 
-    wc filename 
-    
-  Usage:
+  Syntax:   
+    wc filename    
+       
+  Usage:   
     wc countries.txt, wc -w countries.txt, wc -l countries.txt   
 -------------------------------------------------    
 - **sort**             :   to sort out the contents of a file alphabetically or numerically. important flags are -u for unique,-n for numeric,-r for reverse sort
-
-  Syntax: 
-    sort filename
-    
-  Usage:
+   
+  Syntax:    
+    sort filename  
+       
+  Usage:  
     sort countries.txt, sort -u countries.txt, sort -r countries.txt   
 
 ======================================================================
@@ -500,28 +504,28 @@ Piping in linux is a term used to pass output of a command as an input to  anoth
 Difference between piping and redirection is that in redirection we redirect an output of a command to a file usually. But with piping we pass the output of a command to another command as an input. We can do multiple piping of commands
 
 -------------------------------------------------
-Usage:
-- ls | less
-- ls -l /usr/bin | less
-- cat book.txt | less
-- ls -1 | wc -l
-- cat -n countries.txt | head -n 20 | tail -n10
+Usage:   
+- ls | less   
+- ls -l /usr/bin | less   
+- cat book.txt | less   
+- ls -1 | wc -l   
+- cat -n countries.txt | head -n 20 | tail -n10  
 ------------------------------------------------- 
 
 - **tr**             : used to truncate or replace a word/character with another word/character.  useful command when used with piping. Important flags -s and -d 
-
-  Syntax: 
-    tr 'word/charcter' 'word/character'
-    
-  Usage:
+   
+  Syntax:    
+    tr 'word/charcter' 'word/character'  
+      
+  Usage:   
     echo text | tr x s , tr 'r' 'b' < file1, echo raju | tr a-z A-Z, cat phone.txt | tr -d [:alpha:] | tr -d : | tr -d +
 -------------------------------------------------
 - **tee**             : tee command reads standard input and copies it to both standard output and file.
-
-  Syntax: 
-     tee [OPTION]... [FILE]...
     
-  Usage:
+  Syntax:    
+     tee [OPTION]... [FILE]...
+       
+  Usage:   
     echo hello | tee hello.txt | cat  , cat countries1.txt countries2.txt | tee country.txt | wc -l
 
 
@@ -568,20 +572,21 @@ The following commands are useful when looking for a file in linux or try to fin
 
 -------------------------------------------------
 - **locate**             : performs a search of pathnames across our machine that matches a given substring and prints out any matching names
-
-  Syntax: 
-    locate string
-    
-  Usage:
+   
+  Syntax:   
+    locate string  
+       
+  Usage:   
     locate hello.txt, locate myfile
  -------------------------------------------------
     
 - **find**             : find is another command that is used to locate files/directories inside linux. it is more powerful than locate as it doesn't uses a
-                     database. find works with relative path. when we write find it list all the directories and files in current directory as well as 
-                     the contents in the sub directories. But we can use absolute paths with find command to locate for files inside a specific directory.   Syntax: 
-    find string/filename
-    
-  Usage:
+                         database. find works with relative path. when we write find it list all the directories and files in current directory as well as 
+                         the contents in the sub directories. But we can use absolute paths with find command to locate for files inside a specific directory.
+  Syntax:   
+    find string/filename  
+        
+  Usage:   
     - find -type f  is used to locate only files in current directory and subdirectories e.g find ./ -type f  , find ~ -type f
     - find -type d will list all directories and sub directories in current folder e.g find ./ -type d , find ~ -type d
     - we can provide a specific pattern for find to use when matching filenames and directories with the -name option we need to enclose our pattern in "".
@@ -625,10 +630,11 @@ By defualt some commands do not accept the stdinput that comes via a pipe e.g fi
 ======================================================================
 ### Grep Command:
 The grep command searches for a pattern in each file's content. Grep will print each line that matches a pattern we provide.Grep is case sensitive
+   
   Syntax: 
      grep pattern filename
-    
-  Usage:
+       
+  Usage:  
     grep "chicken" animals.txt
 
 -------------------------------------------------

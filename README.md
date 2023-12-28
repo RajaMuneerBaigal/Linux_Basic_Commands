@@ -189,7 +189,7 @@ ncal -3hMj       : will print the the previous current next month with monday as
 - login                                    :    used to login as a different user
 	
 - passwd                                   :    used to set a password for the current user you are logged in as
-
+</pre>
 =============================================================================
 
 Udemy Linux Commands:

@@ -67,69 +67,69 @@ ncal -3hMj       : will print the the previous current next month with monday as
 ### Some of the basic commands:
 
 <pre>
-- apt					 : apt stands for advance packaging tool, it can be used with different commands like apt update, apt install etc .
+- apt					  : apt stands for advance packaging tool, it can be used with different commands like apt update, apt install etc .
 					   it is necessary to update before installing any packages. i.e apt update and then apt install
  
-- apt list				 : apt list shows what packages are installed on our ubuntu/linux system
+- apt list				  : apt list shows what packages are installed on our ubuntu/linux system
 
-- pwd			                 : present working directory
+- pwd			                  : present working directory
 
-- ls			                 : list all files/folders in current working directory
+- ls			                  : list all files/folders in current working directory
 
-- cd dirname		                 : change directory to a particular directory 
+- cd dirname		                  : change directory to a particular directory 
 
-- cd ..			                 : to go to previous directory
+- cd ..			                  : to go to previous directory
 
-- touch			                 : touch command is used to create files
+- touch			                  : touch command is used to create files
 
-- mkdir			                 : make directory
+- mkdir			                  : make directory
 
-- mv ../fname .		                 : to move a file from previous folder to current working directory
+- mv ../fname .		                  : to move a file from previous folder to current working directory
 
-- rm _filename_		                 : to remove a file with name 
+- rm _filename_		                  : to remove a file with name 
 
-- cd ~ or cd		                 : to goto home directory
+- cd ~ or cd		                  : to goto home directory
 
-- sudo			                 : to run any command as administrator
+- sudo			                  : to run any command as administrator
 
-- sudo apt-get update		         : to install any updates on ubuntu or linux
+- sudo apt-get update		          : to install any updates on ubuntu or linux
 
-- man				         : man means manual, use with commands to learn more
+- man				          : man means manual, use with commands to learn more
 
-- apt-get install pckg                     : to install any softwares on ubuntu/linux pckg represents package name
+- apt-get install pckg                    : to install any softwares on ubuntu/linux pckg represents package name
 
-- cp source dest                           : copy file from source to destination
+- cp source dest                          : copy file from source to destination
 
-- sudo scp i keyPname source destination   : scp command is used to copy any file from server to local or local to server but it will only be used in local 
+- sudo scp i keyPname source destination  : scp command is used to copy any file from server to local or local to server but it will only be used in local 
                                              server
 e.g sudo scp -i mykeypair.pem downloads/raju.png ubuntu@ec2-54-72-184-240.eu-west-1.compute.amazonaws.com:/home/ubuntu/my_folder
 
-- touch file-{1..10}.txt                   : to create multiple files
+- touch file-{1..10}.txt                  : to create multiple files
 
-- rm file-{1..10}.txt                      : to remove multiple files
+- rm file-{1..10}.txt                     : to remove multiple files
 
-- rm textfiles*				 : to remove all files with string textfiles. i.e this will remove all files with textfiles as names in current 
+- rm textfiles*				  : to remove all files with string textfiles. i.e this will remove all files with textfiles as names in current 
                                             directory   
 
-- free					 : free command is used to check how 
+- free					  : free command is used to check how 
 					   how much memory is used (Ram)
 
-- top					 : top command is used to check which processes are running in our RAM. 
+- top					  : top command is used to check which processes are running in our RAM. 
 
 
-- df -H					 :  df -H is used to check how much disk is free and how much is utilized
+- df -H					  :  df -H is used to check how much disk is free and how much is utilized
 
-- awk					 : awk is a scripting language used to manipulate files or outputs, used for segmenting outputs i.e we can display 
+- awk					  : awk is a scripting language used to manipulate files or outputs, used for segmenting outputs i.e we can display 
                                           columns  
 
-- df -H | awk '{print $1}'		 : the output of df -H will be input to awk using pipe(|) and awk will print the first column 
+- df -H | awk '{print $1}'		  : the output of df -H will be input to awk using pipe(|) and awk will print the first column 
 
 
-- crontab					 : a file where we see what is being scheduled
+- crontab				   : a file where we see what is being scheduled
 
-- crontab -l				 : to list all the cron jobs in our system
+- crontab -l				   : to list all the cron jobs in our system
 
-- crontab -e				 : to edit a crontab file
+- crontab -e				   : to edit a crontab file
 
 
 - rm -r directory name                     : to remove directory recursively and all its content
@@ -142,53 +142,52 @@ e.g sudo scp -i mykeypair.pem downloads/raju.png ubuntu@ec2-54-72-184-240.eu-wes
 
 - mv file_name /home/raju/new_file         : to move file to new directory with a new name
 
-- cat filename				 : to display the content of small file
+- cat filename				   : to display the content of small file
 
-- less filename				 : to list the contents of long file in an interactive way
+- less filename				   : to list the contents of long file in an interactive way
 
-- head -5 filename			 : to display the first five lines of a file
+- head -5 filename			   : to display the first five lines of a file
 
-- tail -5 filename			 : to display the last five lines of a file
+- tail -5 filename			   : to display the last five lines of a file
 
 - script filename                          : to recored every command you type and its output and save it in a file. very handy if you keep forgetting 
-                                            commands you runned in your linux.  
+commands you runned in your linux.  
 
 - join file1 file2                         : join two files depending upon the similarity between them
 
-- split filename taggingname               : split larger files into smaller files. default size for smaller size file is 1000 lines. used with flags -n to 
-                                              specify how many small files you want to create of large file  
+- split filename taggingname               : split larger files into smaller files. default size for smaller size file is 1000 lines. used with flags -n to  specify how many small files you want to create of large file  
 
 
 - diff  file1 file2                        : used to show the difference between two files. used with flags -d to show which lines needed to deleted to make 
                                              the identical, -c the changes to be made in file1 and file2 to make them identical.  
 
-- comm file1 file2                         : used to compare two sorted files. The first column in output shows element only in file1 , second column shows 					      the only element in file2, third line shows common elements.
+- comm file1 file2                         : used to compare two sorted files. The first column in output shows element only in file1 , second column shows the only element in file2, third line shows common elements.
   
 
 - cmp file1 file2                          : used to compare files. outputs the line number in which there is difference between two files.
 
-- wc filename                              : used to count the words in a file along with spaces. use with flags. i.e -l lines , -w words , -L longest , -m 					      character counts
+- wc filename                              : used to count the words in a file along with spaces. use with flags. i.e -l lines , -w words , -L longest , -m character counts
   
 
 - cut filename                             : used to cut portion of a file. flags -f and -c. -f print only these fields, -c select only these character
 
-- paste file1 file2                         : used to join two files together. it displays in column form. useful to see difference as well
+- paste file1 file2                        : used to join two files together. it displays in column form. useful to see difference as well
 
 - grep -n apple file1 file2                : used to search out a field in a file or files. -c count of occurences , -l display list of files which contains 
-                                              keyword/pattern/word, -n display line number along lines containing a pattern.  
+keyword/pattern/word, -n display line number along lines containing a pattern.  
 
 - aspell check filename                    : to check a spelling mistake in a word in a file.
 
 - nl filename                              : to list the contents in a file with an index number. useful to write it to another file in with an index 
-		                              starting from 1
+starting from 1
 
 - gpg -c filename                          : to encrypt a file
 
 
-- nautilus directorypath                    : to open any directory from terminal. i.e nautilus Desktop
+- nautilus directorypath                   : to open any directory from terminal. i.e nautilus Desktop
 
-- login                                     :    used to login as a different user
-- passwd                                    :    used to set a password for the current user you are logged in as
+- login                                    :    used to login as a different user
+- passwd                                   :    used to set a password for the current user you are logged in as
 </pre>
 =============================================================================
 

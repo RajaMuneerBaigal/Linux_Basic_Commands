@@ -576,10 +576,11 @@ There are 5 characters used in first column: -  d r w x  each having their own m
 - w : write only
 - x :  execute only
 -------------------------------------------------
-The ten characters we see when we do ls -l on a path  are called file attributes 
+The ten characters we see when we do ls -l on a path  are called file attributes   
+<pre>
 d r w x r w x r w x
 - r w x r w x r w x
-
+</pre>
 and have specific meaning.
 The 1st ( d/-/l/c/b ) character represents either if its a directory or a file. d represents its a directory and - a regular file. The next 3 (r,w,x) characters represents user permission on that file/folder, The next 3 (r,w,x) characters reprsents group permission on that file/folder, and the last 3 (r,w,x) characters represents world/all/others permission on that file/folder
 

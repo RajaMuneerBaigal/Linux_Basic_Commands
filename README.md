@@ -472,7 +472,7 @@ Usage:
 - tee             : tee command reads standard input and copies it to both standard output and file.
 
   Syntax: 
-     tee [OPTION]... [FILE]...
+     tee filename
     
   Usage:
     echo hello | tee hello.txt | cat  , cat countries1.txt countries2.txt | tee country.txt | wc -l
@@ -480,28 +480,27 @@ Usage:
 
 ======================================================================
 Expansion in Linux:
--------------------------------------------------
 Expansions are of several types in linux.  Pathname expansion, tilde expansion, arithmetic expansion
 Pathname extension uses several symbols which have their meaning. characters/symbols such as *, [], $. We can use special wildcard characters to build patterns that can match multiple files at once.
 -------------------------------------------------
-The asterik ( * ) character represents zero or more characters in a filename. e.g ls *.css , cat blue* will match every file with a css extension and every file starting with blue word respectively.  another example can be echo *file* will match that has file word in it
+### The asterik ( * ) character represents zero or more characters in a filename. e.g ls *.css , cat blue* will match every file with a css extension and every file starting with blue word respectively.  another example can be echo *file* will match that has file word in it
 -------------------------------------------------
-The question mark ( ? )  character reprsents any single character.        e.g  ls app.?? will match any file with two extension having two characters  app.js , app.py etc      ls pic?.png will result in pic2, pic1, or any picA.png files if present in current directory
+### The question mark ( ? )  character reprsents any single character.        e.g  ls app.?? will match any file with two extension having two characters  app.js , app.py etc      ls pic?.png will result in pic2, pic1, or any picA.png files if present in current directory
 -------------------------------------------------
-The [] characters can be used to match a range of characters. eg. ls pic[123].png  will only match pic1.png, pic2.png and pic3.png ls [A-F]* will match any files or folder starting with letters from A to F. ls pic[1-9].png will list pic1 to pic9
+### The [] characters can be used to match a range of characters. eg. ls pic[123].png  will only match pic1.png, pic2.png and pic3.png ls [A-F]* will match any files or folder starting with letters from A to F. ls pic[1-9].png will list pic1 to pic9
 -------------------------------------------------
-Remember with these characters we can not only use ls or echo, we can use cp, mv, rm which is useful with these commands and any command that takes files as an argument or standard input we can use it. Also these symbols can be used with each other to create more complex patterns for our use cases. 
+### Remember with these characters we can not only use ls or echo, we can use cp, mv, rm which is useful with these commands and any command that takes files as an argument or standard input we can use it. Also these symbols can be used with each other to create more complex patterns for our use cases. 
 -------------------------------------------------
-Negating ranges : inside of square [] brackets we can specify a range of characters not to match using symbol caret ( ^ ) . E.g ls [^a]* will match any files that do not start with character a. ls [ ^0-9]* will match any files that do not start with a numeric digit. echo [^Cc] to not match any files with upper C or lower c
+#### Negating ranges : inside of square [] brackets we can specify a range of characters not to match using symbol caret ( ^ ) . E.g ls [^a]* will match any files that do not start with character a. ls [ ^0-9]* will match any files that do not start with a numeric digit. echo [^Cc] to not match any files with upper C or lower c
 -------------------------------------------------
-Tilde ( ~ ) is expanded to home directory of the current user. when we do cd ~ it redirects us to our current user home directory.
+#### Tilde ( ~ ) is expanded to home directory of the current user. when we do cd ~ it redirects us to our current user home directory.
 -------------------------------------------------
-Brace Expansion basically generates multiple strings for us based on a pattern. we provide set of strings inside curly braces { } as well as surrounding suffixes and prefixes . e.g touch file{1,2,3}.txt will generate  file1,file2,file3 altogether. Useful when creating files and folders faster. We can also create nested brace expression echo {A,{a..z},Z}
+#### Brace Expansion basically generates multiple strings for us based on a pattern. we provide set of strings inside curly braces { } as well as surrounding suffixes and prefixes . e.g touch file{1,2,3}.txt will generate  file1,file2,file3 altogether. Useful when creating files and folders faster. We can also create nested brace expression echo {A,{a..z},Z}
 -------------------------------------------------
-Arithmetic expansion can be done in terminal. Shell does it using $((expression)) e.g echo $((5%3))
+#### Arithmetic expansion can be done in terminal. Shell does it using $((expression)) e.g echo $((5%3))
 
 -------------------------------------------------
-Command substitution in linux is done using $(command)
+#### Command substitution in linux is done using $(command)
 -------------------------------------------------
 
 ======================================================================

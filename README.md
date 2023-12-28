@@ -25,7 +25,8 @@ There are basically four type of commands:
 We can find the types of commands using type and then followed by command
 
 
-=====================================================================
+=====================================================================  
+
 **The basic structure of a commands is:**
 
 **command -options arguments**

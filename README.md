@@ -879,3 +879,5 @@ We can use this website to setup a cronjob syntax. https://crontab.guru/
 	
 - passwd                                   :    used to set a password for the current user you are logged in as
 </pre>
+
+======================= THE END ==================================

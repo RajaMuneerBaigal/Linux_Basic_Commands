@@ -49,10 +49,11 @@ It's not necessary that it will always accept one argument. some commands requir
 The order of arguments also matters in some commands but not necessarily in all of them.
 </pre>
 ---------------------------------
-**Options:**
-Most of the commands in linux support options. options are generally specified with a dash and some alphabet or a word. ncal -h . options can be combined ncal -3 -h or ncal -3h
+**Options:**  
+Most of the commands in linux support options. options are generally specified with a dash and some alphabet or a word. ncal -h . options can be combined ncal -3 -h or ncal -3h  
 
 options change the behaviour of commands. i.e  
+<pre>
 ncal -j		 : will print current month with days in 1,2,3 format. i.e it will print the day according to 365 days and will highlight which day of the
                   year it is.
 ncal -h		 : will print the current month without highlighting the current day.
@@ -60,7 +61,7 @@ ncal 2022 -j	 : will print the whole year in 365 days format and highlights the 
 
 We can combine multiple options: like
 ncal -3hMj       : will print the the previous current next month with monday as first day and with no highlighting
-
+</pre>
 ====================================================================================
 
 Some of the basic commands:

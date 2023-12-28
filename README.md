@@ -756,64 +756,69 @@ Example usage:
 - chmod 400 file means only ready permission for user, and no permission for others, and group
 -------------------------------------------------
 
-The su command is used to switch user. e.g if I have two users named raju and muneer on my machine. I can switch to other user from terminal using su - muneer. The " - " symbol is short form for --login with su command. The difference between su muneer and su - muneer is that su - muneer changes the current home directory to changed user while only su muneer changes user to muneer and doesn't changes home directory to muneer
+The **su** command is used to switch user. e.g if I have two users named raju and muneer on my machine. I can switch to other user from terminal using su - muneer. The " - " symbol is short form for --login with su command. The difference between su muneer and su - muneer is that su - muneer changes the current home directory to changed user while only su muneer changes user to muneer and doesn't changes home directory to muneer
 
 -------------------------------------------------
 By default there is a super user in linux called root user. The root user has every privilige and access to any files/folders. Means we can install any package, remove or add files to folders and so on
 
 -------------------------------------------------
-The sudo command is used to run commands as super user or root user. By default admin users do not have access to all the resources sudo commands allows us to run commands as root users hence giving us access to resources and files. We can check the permitted commands for an individual user using "sudo -l"  command 
-
+The **sudo** command is used to run commands as super user or root user. By default admin users do not have access to all the resources sudo commands allows us to run commands as root users hence giving us access to resources and files. We can check the permitted commands for an individual user using "sudo -l"  command 
+<pre>  
+sudo apt update ,sudo chown raju:raju file.txt, sudo apt remove nginx  
+</pre>
 -------------------------------------------------
-sudo apt update ,sudo chown raju:raju file.txt, sudo apt remove nginx
-
--------------------------------------------------
-We can change the ownership of a file/folder using a command called chown. chown allows us to change file/folder users, groups and others.
-
--------------------------------------------------
+We can change the ownership of a file/folder using a command called **chown** . chown allows us to change file/folder users, groups and others.  
+<pre>
 chown raju file.txt to change user
 chown :raju file.txt to change group
 chown raju:raju file to change both
-
+</pre>
 -------------------------------------------------
 Groups in linux are used to grant permission based on the users added to that group and permission attached to that group. we can check a user's groups using groups username command
-
--------------------------------------------------
-To create groups we can use addgroup groupname command
-To add users to a group we can use adduser username groupname
-
+<pre>
+To create groups we can use **addgroup groupname** command
+To add users to a group we can use **adduser username groupname**
+</pre>
 -------------------------------------------------
 
 ======================================================================
-The Environment:
+### The Environment:
 The shell maintains a set of information during a shell session know as environment. It is a just a series of key-value pairs that define properties like user home directory, working directory, name of the shell and so on and for each user these are different. All the environment variables are defined in upper case.
 
-- printenv  to print the env variables for a logged user
+- **printenv**  to print the env variables for a logged user
 -------------------------------------------------
-parameter expansion is type of expension where when we type the name of an environment variable shell replaces it with its actual value. e.g echo $USER
+Parameter expansion is type of expension where when we type the name of an environment variable shell replaces it with its actual value. e.g echo $USER
 
 -------------------------------------------------
 We can define variables in shell using key=value pairs but the are only available in the current shell session.  when we open a new terminal session we cannot use them.  Environment variables are global variables and can be accessed over different shell sessions we can create environment variables using export command. But the env variable we create using export will not be available in a new shell session it will exsist in our current shell and in a child shell if we create using bash command.
+<pre>
 - export name=raju will create an environment variable with name=raju
-
+</pre>
 -------------------------------------------------
 When we log in, the shell reads info from startup files , first the shell reads from global config files that effect the environment for all the users , then shell reads the config files for each specific user.  The specific files the shell reads from depends upon the type of session. login vs non-login shell sessions.
 
 -------------------------------------------------
-for login sessions.  /etc/profile - global config file for all users  ~/.bash_profile - user personal config file .    ~/.bash_login - read if  .bash_profile file isn't found. and ~/.profile - used when both the above personal config files not found
+**for login sessions.**  
+- /etc/profile - global config file for all users
+- ~/.bash_profile - user personal config file.
+- /.bash_login - read if  .bash_profile file isn't found
+- ~/.profile - used when both the above personal config files not found
 
 -------------------------------------------------
-for non-login sessions.  etc/bash.bashrc - global config for all users. ~/.bashrc - specific settings for each user where we can define our own configurations
+**for non-login sessions.**  
+- etc/bash.bashrc - global config for all users.
+- ~/.bashrc - specific settings for each user where we can define our own configurations
 
 -------------------------------------------------
-To make our environment variables permanent we can use the .bashrc file located at home directory of our user. so if i add name=raju in .bashrc file it is saved for every terminal session I open.
+**To make our environment variables permanent we can use the .bashrc file located at home directory of our user. so if i add name=raju in .bashrc file it is saved for every terminal session I open.**
 
 -------------------------------------------------
-We can define our own commands using alias keyword. e.g alias ll=ls -al. If we run then in our command terminal session they will work but to make them permanent we need to put them in .bashrc file
-
--------------------------------------------------
-alias ..="cd .." will create a command ".." which we can use inplace of cd ..
-
+We can define our own commands using **alias** keyword.
+e.g alias ll=ls -al.   
+If we run then in our command terminal session they will work but to make them permanent we need to put them in .bashrc file
+<pre>
+alias ..="cd .."         will create a command ".." which we can use inplace of cd ..
+</pre>
 
 
 

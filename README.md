@@ -714,7 +714,11 @@ When we write a shell builtin command such as echo or pwd or any other command, 
 -------------------------------------------------
 echo $PATH gives us the path variable that actually stores the executable program for every command we run in our terminal.
 which echo  or whereis echo  will give us the path  where is echo defined in our OS and the path for echo and all other commands is stored in $PATH variable and thats how it was able to run it
+<pre>
+echo $PATH 
+/home/raja-muneer-baigal/.nvm/versions/node/v16.20.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/raja-muneer-baigal/.dotnet/tools
 
+</pre>
 -------------------------------------------------
 
 To define our own command we could put the script that we wrote in any of the folders that echo $PATH variable shows but instead we can create a bin directory in our $HOME directory as ubuntu has prebuilt file .profile that looks for any folder in $HOME and if we place any file  in $HOME/bin directory and treats them as a command. e.g when I write a script that says echo and place it under $HOME/bin directory and has properly defined the interperter for it it will execute without any errors.

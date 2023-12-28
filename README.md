@@ -3,6 +3,7 @@
 
 #### Linux Introduction:   
 Linux is a combination of kernel and GNU components such as applications, window managers, file structures and so on. A kernel is a program that helps the interaction between computer hardware and computer applications (software).Together they make a linux Operating system.  
+  
 Linux Distributions all have the same kernel but different gnu components. Some of the popular linux distributions are alpine, ubuntu, fedora and more than 1000 exsists as of today being an open source program it allows different developers to make changes to the gnu components and create their own distributions
 
 **True UNIX vs Unix-Like:**                                                                          

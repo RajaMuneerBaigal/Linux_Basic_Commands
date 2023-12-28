@@ -1,21 +1,21 @@
 
 Some Important Concepts: 
 
-Linux Introduction:  
+**Linux Introduction:**  
 Linux is a combination of kernel and GNU components such as applications, window managers, file structures and so on. A kernel is a program that helps the interaction between computer hardware and computer applications (software).Together they make a linux Operating system.
 Linux Distributions all have the same kernel but different gnu components. Some of the popular linux distributions are alpine, ubuntu, fedora and more than 1000 exsists as of today being an open source program it allows different developers to make changes to the gnu components and create their own distributions
 
-True UNIX vs Unix-Like:                                                                          
+**True UNIX vs Unix-Like:**                                                                          
 True Unix operating systems are evaluated by some standard rules set by an organization called the open group. For an Os to be true Unix compliant it is evaluted by the open group according the to the standards and once it is compliant it is called as true unix. Macos is an example of true unix. Unix Like Os are not compliant  against the rules/standards set by open group hence called unix like they are mostly open source. e.g alpine,ubuntu,fedora
 
-Linux Terminal:
+**Linux Terminal:**
 Terminal is a software that comes with the operating system which allows us to communicate to shell which in result communicates to operating system and displays any results based on the input we provided via terminal
 
-Linux Shell:
+**Linux Shell:**
 Shell is a program that exposes a computer os to the one who is controlling it. It allows one to interact with the operating system to perform operations on the operating system
 
 
-Types of Commands:
+**Types of Commands:**
 There are basically four type of commands:
 - An executable program usually stored in /bin  /usr/bin or usr/local/bin. These are compile binary files hence bin
 - A built in shell command. Commands part of shell
@@ -26,22 +26,26 @@ We can find the types of commands using type and then followed by command
 
 
 =====================================================================
-The basic structure of a commands is:
+**The basic structure of a commands is:**
 
-command -options arguments
+**command -options arguments**
 
 -----------------------------------
-Arguments:
-something that we can give as an input to a command. i.e echo "hello world" . Here "hello world" is an argument to command echo. some command might take more than one arguments such as ncal july 2023. it takes july and 2023 as an year. Commands use take arguments in the format they expect. I.e we cannot pass month after year so we need to be vary of that.
+**Arguments:**
+something that we can give as an input to a command.  
+i.e echo "hello world" . Here "hello world" is an argument to command echo.  
+some command might take more than one arguments such as ncal july 2023. it takes july and 2023 as an year. 
+Commands use take arguments in the format they expect. I.e we cannot pass month after year so we need to be vary of that.
 
 we can use arguments with commands as most commands use arguments.i.e 
 echo hello   : here hello is an argument to echo command
 ncal 2021    : here 2021 is an arument to ncal command. It will print whole 20201 calendar.
 
-Its not necessary that it will always accept one argument. some commands require more arguments.
+It's not necessary that it will always accept one argument. some commands require more arguments.
 The order of arguments also matters in some commands but not necessarily in all of them.
+
 ---------------------------------
-Options:
+**Options:**
 Most of the commands in linux support options. options are generally specified with a dash and some alphabet or a word. ncal -h . options can be combined ncal -3 -h or ncal -3h
 
 options change the behaviour of commands. i.e

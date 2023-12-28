@@ -203,39 +203,39 @@ Operating System by default comes with some manual pages. Manual pages are helpf
 
 - **man**               : used to print manual of commands i.e thier usage, options and all the info regarding a command
 
-  **Syntax:** 
+  **Syntax:**     
     man command
     
-  **Usage:**
+  **Usage:**        
     man echo, man less, man grep and so on
  -------------------------------------------------
  
 - **type**               :  type commans will tell us the type of a command
 
-  **Syntax:** 
+  **Syntax:**     
     type command
     
-  **Usage:**
+  **Usage:**        
     type echo, type less, type grep and so on
   
  -------------------------------------------------
  
 - **which**               : tells where a command is located. i.e in simple words file name where a command is defined
 
-  **Syntax:** 
+  **Syntax:**     
     which command
     
-  **Usage:**
+  **Usage:**        
     which echo, which less, which grep and so on
   
  -------------------------------------------------
  
 - **help**                : help command used to print out help regarding anything if there is no manual for it.
 
-  **Syntax:** 
+  **Syntax:**     
     help command
     
-  **Usage:**
+  **Usage:**        
     help echo
     
 ======================================================================
@@ -255,30 +255,30 @@ Relative path is a path that is related to currently directory you are in. we ca
 
 - **pwd**               : used to print the present working directory
 
-  **Syntax:** 
+  **Syntax:**     
     pwd 
     
-  **Usage:**
+  **Usage:**        
     pwd
   
  -------------------------------------------------   
  
 - **ls**               :  used to list the contents of a directory or current path
 
-  **Syntax:** 
+  **Syntax:**     
     ls path
     
-  **Usage:**
+  **Usage:**        
     ls , ls ~ , ls /
   
  -------------------------------------------------   
  
 - **cd**               : used to change directories in linux
 
-  **Syntax:** 
+  **Syntax:**     
     cd path
     
-  **Usage:**
+  **Usage:**        
     cd ~ , cd / , cd ~/Learning, cd .. 
  -------------------------------------------------   
  
@@ -297,28 +297,28 @@ Linux terminal provides us several commands to create files and folders. With wh
 **commands for creating files/folder in linux are:**
 - **touch**               : used to create file 
 
-  **Syntax:** 
+  **Syntax:**     
     touch filename 
     
-  **Usage:**
+  **Usage:**        
     touch hello.txt , touch ~/Learning/linux.txt, touch file{1....100}.txt
   
  -------------------------------------------------   
 - **mkdir**               :  used to create directories
 
-  **Syntax:** 
+  **Syntax:**     
     mkdir foldername
     
-  **Usage:**
+  **Usage:**        
     mkdir test , mkdir ~/Linux , mkdir -p ~/Learning/Devops
   
  -------------------------------------------------   
 - **file**               : used to determine a file information
   
-  **Syntax:**   
+  **Syntax:**       
     file filename  
       
-  **Usage:**  
+  **Usage:**          
     file hello.txt , file ~/hello.txt, file pic.png
     
  -------------------------------------------------
@@ -330,7 +330,7 @@ Linux terminal provides us several commands to create files and folders. With wh
 -------------------------------------------------
 Nano is a command line editor to edit files.  Also it allows to create new files and edit them.There are some other editors such as pico, vim. Nano provides several shortcuts keys that usually start with Ctrl or Alt key on keyboard.
 
- **Syntax:** 
+ **Syntax:**     
     nano filename
     
 ------------------------------------------------- 
@@ -352,30 +352,30 @@ Linux provides three commands to copy,reomve or move files
  
 - **cp**              : used to copy contents of a file/folder to another file/folder
     
-  **Syntax:**   
+  **Syntax:**       
     cp sourcefilename destinationfilename
     cp -r sourcedirectory destinationdirectory
     
-  **Usage:**   
+  **Usage:**           
     cp file1.txt file2.txt, cp -r ~/Learning/ MyLearning
 -------------------------------------------------    
 - **rm**               :  used to remove files/directories
 
-  **Syntax:**      
+  **Syntax:**          
     rm file1      
     rm -r foldername   
      
-  **Usage:**   
+  **Usage:**           
     rm file.txt , rm file1.txt file2.txt file3.txt , rm file*, rm -r ~/Linux , rm -d folder , rmdir folder , rm -ri folder
   
 -------------------------------------------------    
 - **mv**               : used to mv files/folders to another file/folder
        
-  **Syntax:**    
+  **Syntax:**        
     mv sourcefile destinationfile     
     mv sourcefolder destinationfolder   
      
-  **Usage:**     
+  **Usage:**             
     mv file1.txt file2.txt , mv file1 file2 file3 finalfile, mv ~/folder ~/myfolder/, file pic.png
     
 ======================================================================
@@ -404,70 +404,70 @@ Linux provides three commands to copy,reomve or move files
  
 - **less**              : will show the contents of a long file page by page in a more readable way
 
-  **Syntax:** 
+  **Syntax:**     
     less filename  
       
-  **Usage:**
+  **Usage:**        
     less file1.txt , less /var/log/access.log  
 -------------------------------------------------    
 - **head**              :  head will print the first 10 lines of a file. We can specify the lines by using -n flag. i.e head -n 100 filename
 
-  **Syntax:** 
+  **Syntax:**     
     head filename    
     
-  **Usage:**   
+  **Usage:**           
     head mybook.txt, head -n100 mybook.txt
 -------------------------------------------------    
 - **cat**               : used to print the contents of a file or concatenate the contents of file
 
-  **Syntax:**    
+  **Syntax:**        
     cat filename   
     cat file1 file2    
        
-  **Usage:**
+  **Usage:**        
     cat countries.txt, cat birds.txt mamals.txt   
 -------------------------------------------------    
 - **tac**              : reverses the output of cat. i.e prints last line first and so on
 
-  **Syntax:** 
+  **Syntax:**     
     tac filename   
     tac file1 file2   
        
-  **Usage:**   
+  **Usage:**           
     cat countries.txt, cat birds.txt mamals.txt animals.txt   
 -------------------------------------------------
 - **rev**              : rev  reverses the characters inside a file. i.e cat will be tac
 
-  **Syntax:**    
+  **Syntax:**        
     rev filename   
     rev file1 file2    
        
-  **Usage:**   
+  **Usage:**           
     cat countries.txt, cat birds.txt mamals.txt 
 -------------------------------------------------    
 - **tail**             : prints the last 10 lines of a file. tail -f is used to print following lines when occur.useful when dealing with logs
     
-  **Syntax:** 
+  **Syntax:**     
     tail filename   
     
-  **Usage:**   
+  **Usage:**           
     tail /var/log/nginx.log , tail -f /var/log/nginx.log 
     
 -------------------------------------------------    
 - **wc**              : used to print word count or lines in a file
 
-  **Syntax:**   
+  **Syntax:**       
     wc filename    
        
-  **Usage:**   
+  **Usage:**           
     wc countries.txt, wc -w countries.txt, wc -l countries.txt   
 -------------------------------------------------    
 - **sort**             :   to sort out the contents of a file alphabetically or numerically. important flags are -u for unique,-n for numeric,-r for reverse sort
    
-  **Syntax:**    
+  **Syntax:**        
     sort filename  
        
-  **Usage:**  
+  **Usage:**          
     sort countries.txt, sort -u countries.txt, sort -r countries.txt   
 
 ======================================================================
@@ -504,7 +504,7 @@ Piping in linux is a term used to pass output of a command as an input to  anoth
 Difference between piping and redirection is that in redirection we redirect an output of a command to a file usually. But with piping we pass the output of a command to another command as an input. We can do multiple piping of commands
 
 -------------------------------------------------
-**Usage:**   
+**Usage:**           
 - ls | less   
 - ls -l /usr/bin | less   
 - cat book.txt | less   
@@ -514,18 +514,18 @@ Difference between piping and redirection is that in redirection we redirect an 
 
 - **tr**             : used to truncate or replace a word/character with another word/character.  useful command when used with piping. Important flags -s and -d 
    
-  **Syntax:**    
+  **Syntax:**        
     tr 'word/charcter' 'word/character'  
       
-  **Usage:**   
+  **Usage:**           
     echo text | tr x s , tr 'r' 'b' < file1, echo raju | tr a-z A-Z, cat phone.txt | tr -d [:alpha:] | tr -d : | tr -d +
 -------------------------------------------------
 - **tee**             : tee command reads standard input and copies it to both standard output and file.
     
-  **Syntax:**    
+  **Syntax:**        
      tee [OPTION]... [FILE]...
        
-  **Usage:**   
+  **Usage:**           
     echo hello | tee hello.txt | cat  , cat countries1.txt countries2.txt | tee country.txt | wc -l
 
 
@@ -573,20 +573,20 @@ The following commands are useful when looking for a file in linux or try to fin
 -------------------------------------------------
 - **locate**             : performs a search of pathnames across our machine that matches a given substring and prints out any matching names
    
-  **Syntax:**   
+  **Syntax:**       
     locate string  
        
-  **Usage:**   
+  **Usage:**           
     locate hello.txt, locate myfile
  -------------------------------------------------
     
 - **find**             : find is another command that is used to locate files/directories inside linux. it is more powerful than locate as it doesn't uses a
                          database. find works with relative path. when we write find it list all the directories and files in current directory as well as 
                          the contents in the sub directories. But we can use absolute paths with find command to locate for files inside a specific directory.
-  **Syntax:**   
+  **Syntax:**       
     find string/filename  
         
-  **Usage:**   
+  **Usage:**           
     - find -type f  is used to locate only files in current directory and subdirectories e.g find ./ -type f  , find ~ -type f
     - find -type d will list all directories and sub directories in current folder e.g find ./ -type d , find ~ -type d
     - we can provide a specific pattern for find to use when matching filenames and directories with the -name option we need to enclose our pattern in "".
@@ -631,10 +631,10 @@ By defualt some commands do not accept the stdinput that comes via a pipe e.g fi
 ### Grep Command:
 The grep command searches for a pattern in each file's content. Grep will print each line that matches a pattern we provide.Grep is case sensitive
    
-  **Syntax:** 
+  **Syntax:**     
      grep pattern filename
        
-  **Usage:**  
+  **Usage:**          
     grep "chicken" animals.txt
 
 -------------------------------------------------
@@ -715,7 +715,7 @@ The 1st ( d/-/l/c/b ) character represents either if its a directory or a file. 
 To change the permission of a file/folder we can use change mode i.e chmod command . to use chmod to alter permission we need to tell it. who we are changing permission for  what changes are we making, adding or removing permissions of a user  and which permissions are we setting
 
 -------------------------------------------------
-**Syntax:**
+**Syntax:**    
   chmod mode filename
   chmod -r mode foldername
   
@@ -734,7 +734,7 @@ Finally, the "which" values are:
 - w for write
 - x for execute permission
 -------------------------------------------------
-Example **Usage:**
+Example **Usage:**        
 - chmod g+w file  will give group members write permission to the file.
 - chmod a-w file will remove write permission for all the users,groups and world
 - chmod u+x file will add execture permission for user group
@@ -758,7 +758,7 @@ Chmod actually uses two types of notations. symbolic as we saw above and there i
 7     1 1 1     r w x  
 </pre>
 -------------------------------------------------
-Example **Usage:**
+Example **Usage:**        
 - chmod 700 file mean rwx permission for user, no permission for group and no permission for others
 - chmod 400 file means only ready permission for user, and no permission for others, and group
 -------------------------------------------------
@@ -868,7 +868,7 @@ We can use this website to setup a cronjob syntax. https://crontab.guru/
 ### Process Related Commands:
  - **ps**             : command to display the characteristics of processes
 
-   **Usage:**
+   **Usage:**        
    <pre>
      ps -f        : will show a full listing of all the processes
      ps -u user   : will show a listing of processes run by user

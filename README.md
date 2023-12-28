@@ -66,7 +66,7 @@ ncal -3hMj       : will print the the previous current next month with monday as
 
 ### Some of the basic commands:
 
-
+<pre>
 - apt					  : apt stands for advance packaging tool, it can be used with different commands like apt update, apt install etc .
 					   it is necessary to update before installing any packages. i.e apt update and then apt install
  
@@ -102,7 +102,8 @@ ncal -3hMj       : will print the the previous current next month with monday as
 
 - sudo scp i keyPname source destination  : scp command is used to copy any file from server to local or local to server but it will only be used in local 
                                              server
-e.g sudo scp -i mykeypair.pem downloads/raju.png ubuntu@ec2-54-72-184-240.eu-west-1.compute.amazonaws.com:/home/ubuntu/my_folder
+  e.g sudo scp -i mykeypair.pem downloads/raju.png ubuntu@ec2-54-72-184-240.eu-west-1.compute.amazonaws.com:/home/ubuntu/my_folder
+	
 
 - touch file-{1..10}.txt                  : to create multiple files
 
@@ -111,8 +112,7 @@ e.g sudo scp -i mykeypair.pem downloads/raju.png ubuntu@ec2-54-72-184-240.eu-wes
 - rm textfiles*				  : to remove all files with string textfiles. i.e this will remove all files with textfiles as names in current 
                                             directory   
 
-- free					  : free command is used to check how 
-					   how much memory is used (Ram)
+- free					  : free command is used to check hhow much memory is used (Ram)
 
 - top					  : top command is used to check which processes are running in our RAM. 
 
@@ -120,7 +120,7 @@ e.g sudo scp -i mykeypair.pem downloads/raju.png ubuntu@ec2-54-72-184-240.eu-wes
 - df -H					  :  df -H is used to check how much disk is free and how much is utilized
 
 - awk					  : awk is a scripting language used to manipulate files or outputs, used for segmenting outputs i.e we can display 
-                                          columns  
+                                            columns  
 
 - df -H | awk '{print $1}'		  : the output of df -H will be input to awk using pipe(|) and awk will print the first column 
 
@@ -151,22 +151,22 @@ e.g sudo scp -i mykeypair.pem downloads/raju.png ubuntu@ec2-54-72-184-240.eu-wes
 - tail -5 filename			   : to display the last five lines of a file
 
 - script filename                          : to recored every command you type and its output and save it in a file. very handy if you keep forgetting 
-commands you runned in your linux.  
+					     commands you runned in your linux.  
 
 - join file1 file2                         : join two files depending upon the similarity between them
 
-- split filename taggingname               : split larger files into smaller files. default size for smaller size file is 1000 lines. used with flags -n to  specify how many small files you want to create of large file  
+- split filename taggingname               : split larger files into smaller files. default size for smaller size file is 1000 lines. used with flags -n to  					     specify how many small files you want to create of large file  
 
 
 - diff  file1 file2                        : used to show the difference between two files. used with flags -d to show which lines needed to deleted to make 
                                              the identical, -c the changes to be made in file1 and file2 to make them identical.  
 
-- comm file1 file2                         : used to compare two sorted files. The first column in output shows element only in file1 , second column shows the only element in file2, third line shows common elements.
+- comm file1 file2                         : used to compare two sorted files. The first column in output shows element only in file1 , second column shows 					     the only element in file2, third line shows common elements.
   
 
 - cmp file1 file2                          : used to compare files. outputs the line number in which there is difference between two files.
 
-- wc filename                              : used to count the words in a file along with spaces. use with flags. i.e -l lines , -w words , -L longest , -m character counts
+- wc filename                              : used to count the words in a file along with spaces. use with flags. i.e -l lines , -w words , -L longest , -m 					     character counts
   
 
 - cut filename                             : used to cut portion of a file. flags -f and -c. -f print only these fields, -c select only these character
@@ -174,12 +174,12 @@ commands you runned in your linux.
 - paste file1 file2                        : used to join two files together. it displays in column form. useful to see difference as well
 
 - grep -n apple file1 file2                : used to search out a field in a file or files. -c count of occurences , -l display list of files which contains 
-keyword/pattern/word, -n display line number along lines containing a pattern.  
+					     keyword/pattern/word, -n display line number along lines containing a pattern.  
 
 - aspell check filename                    : to check a spelling mistake in a word in a file.
 
 - nl filename                              : to list the contents in a file with an index number. useful to write it to another file in with an index 
-starting from 1
+				             starting from 1
 
 - gpg -c filename                          : to encrypt a file
 
@@ -187,6 +187,7 @@ starting from 1
 - nautilus directorypath                   : to open any directory from terminal. i.e nautilus Desktop
 
 - login                                    :    used to login as a different user
+	
 - passwd                                   :    used to set a password for the current user you are logged in as
 
 =============================================================================

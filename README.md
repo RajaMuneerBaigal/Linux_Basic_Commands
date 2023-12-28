@@ -115,11 +115,11 @@ Operating System by default comes with some manual pages. Manual pages are helpf
 
 **Navigation in Linux:**
 
-'/ ' in linux represents the top level or root directory. Every other components are inside this root directory. it contains users, binaries,devices and so on. we can open a root directory on terminal using xdg-open / where / represents root directory. There is an important home directory inside root directory which stores information regarding to the users in the os. home directory is represented as ' ~ ' whereas root as  ' / '
+**'/ '** in linux represents the top level or root directory. Every other components are inside this root directory. it contains users, binaries,devices and so on. we can open a root directory on terminal using xdg-open / where / represents root directory. There is an important home directory inside root directory which stores information regarding to the users in the os. home directory is represented as ' ~ ' whereas root as  ' / '
 
 -------------------------------------------------
 
-**Relative vs Absolute Paths:**
+**Relative vs Absolute Paths:**  
 Relative path is a path that is related to currently directory you are in. we can use relative paths to navigate between folders. Absolute path is  a path that starts from the root directory that is /  .Absolute path always work as we are referencing the path from root directory whereas relative path might give us some errors if we do not provide the relative path properly
 
 -------------------------------------------------
@@ -208,14 +208,14 @@ Nano is a command line editor to edit files.  Also it allows to create new files
     
 ------------------------------------------------- 
  **Shortcuts:**
- - Ctrl + O used to write out any lines. save lines and keep the editor open
- - Ctrl + X to exit out of nano
- - Ctrl + S to save written lines in a file created using nano
- - Alt + \ or / to move to first and last line in a file or Ctrl + up or down arrow key
- - Ctrl + G to get help regarding nano shortcuts and other stuff
- - Alt + shift + 4 key to fit the content of a large file to make readable
- - nano +15399 country-data.json  allows nano to open  a file at specific line number
- - Ctrl + R is used to insert the content of another file to currently open file
+ - **Ctrl + O** used to write out any lines. save lines and keep the editor open
+ - **Ctrl + X** to exit out of nano
+ - **Ctrl + S** to save written lines in a file created using nano
+ - **Alt + \ or /** to move to first and last line in a file or **Ctrl + up/down** arrow key
+ - **Ctrl + G** to get help regarding nano shortcuts and other stuff
+ - **Alt + shift + 4** key to fit the content of a large file to make readable
+ - **nano +15399 country-data.json**  allows nano to open  a file at specific line number
+ - **Ctrl + R** is used to insert the content of another file to currently open file
 
 ======================================================================
 ### Copy,Removing,Moving files in Linux:

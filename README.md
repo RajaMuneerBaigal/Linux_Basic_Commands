@@ -36,16 +36,17 @@ We can find the types of commands using type and then followed by command
 **Arguments:**
 something that we can give as an input to a command.  
 i.e echo "hello world" . Here "hello world" is an argument to command echo.   
+  
 some command might take more than one arguments such as ncal july 2023. it takes july and 2023 as an year.   
 Commands use take arguments in the format they expect. I.e we cannot pass month after year so we need to be vary of that.
-
+  
 we can use arguments with commands as most commands use arguments.i.e 
-echo hello   : here hello is an argument to echo command
+<pre> echo hello   : here hello is an argument to echo command
 ncal 2021    : here 2021 is an arument to ncal command. It will print whole 20201 calendar.
 
 It's not necessary that it will always accept one argument. some commands require more arguments.
 The order of arguments also matters in some commands but not necessarily in all of them.
-
+</pre>
 ---------------------------------
 **Options:**
 Most of the commands in linux support options. options are generally specified with a dash and some alphabet or a word. ncal -h . options can be combined ncal -3 -h or ncal -3h

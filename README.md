@@ -8,15 +8,15 @@ Linux Distributions all have the same kernel but different gnu components. Some 
 **True UNIX vs Unix-Like:**                                                                          
 True Unix operating systems are evaluated by some standard rules set by an organization called the open group. For an Os to be true Unix compliant it is evaluted by the open group according the to the standards and once it is compliant it is called as true unix. Macos is an example of true unix. Unix Like Os are not compliant  against the rules/standards set by open group hence called unix like they are mostly open source. e.g alpine,ubuntu,fedora
 
-**Linux Terminal:**
+**Linux Terminal:**  
 Terminal is a software that comes with the operating system which allows us to communicate to shell which in result communicates to operating system and displays any results based on the input we provided via terminal
 
-**Linux Shell:**
+**Linux Shell:**  
 Shell is a program that exposes a computer os to the one who is controlling it. It allows one to interact with the operating system to perform operations on the operating system
 
 
 **Types of Commands:**
-There are basically four type of commands:
+There are basically four type of commands:  
 - An executable program usually stored in /bin  /usr/bin or usr/local/bin. These are compile binary files hence bin
 - A built in shell command. Commands part of shell
 - A shell function

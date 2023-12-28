@@ -586,34 +586,34 @@ The 1st ( d/-/l/c/b ) character represents either if its a directory or a file. 
 
 ======================================================================
 ### Altering Permissions:
-To change the permission of a file/folder we can use change mode i.e chmod command . to use chmod to alter permission we need to tell it. who we are changing permission for  what changes are we making, adding or removing permissions of a user  and which permissions are we setting
+To change the permission of a file/folder we can use change mode i.e **chmod** command .To use chmod to alter permission we need to tell it. **who** we are changing permission for  **what** changes are we making, adding or removing permissions of a user  and **which** permissions are we setting
 
 -------------------------------------------------
 **Syntax:**    
   chmod mode filename
   chmod -r mode foldername
   
-When specifiying permission with chmod , we use a special syntax to write permission statements. First we specify the "who"  with following values. 
+When specifiying permission with chmod , we use a special syntax to write permission statements. First we specify the **"who"**  with following values. 
 - u for user
 - g for group 
 - o for others(world) and a for all of the above
 -------------------------------------------------
-Next we tell chmod "what" we are doing using the following characters: 
+Next we tell chmod **"what"** we are doing using the following characters: 
  - Plus (+) for granting permissions
  - Minus (-) for removing permissions 
  - Equals (=) sets a permission and removes others
 -------------------------------------------------
-Finally, the "which" values are:
+Finally, the **"which"** values are:
 - r for read permission
 - w for write
 - x for execute permission
 -------------------------------------------------
 Example **Usage:**        
-- chmod g+w file  will give group members write permission to the file.
-- chmod a-w file will remove write permission for all the users,groups and world
-- chmod u+x file will add execture permission for user group
-- chmod a=r file will only add read permission for all (user,group,world)  and remove pervious permissions that was set for the file
-- chmod ugo+rwx file is same as chmod a=rwx file as its gives all permission to all users,groups,and others
+- **chmod g+w** file  will give group members write permission to the file.
+- **chmod a-w** file will remove write permission for all the users,groups and world
+- **chmod u+x** file will add execture permission for user group
+- **chmod a=r** file will only add read permission for all (user,group,world)  and remove pervious permissions that was set for the file
+- **chmod ugo+rwx** file is same as chmod a=rwx file as its gives all permission to all users,groups,and others
 
 -------------------------------------------------
 Chmod actually uses two types of notations. symbolic as we saw above and there is another notation called octal notation.
@@ -655,11 +655,11 @@ chown :raju file.txt to change group
 chown raju:raju file to change both
 </pre>
 -------------------------------------------------
-Groups in linux are used to grant permission based on the users added to that group and permission attached to that group. we can check a user's groups using groups username command
-<pre>
-To create groups we can use **addgroup groupname** command
-To add users to a group we can use **adduser username groupname**
-</pre>
+**Groups in linux are used to grant permission based on the users added to that group and permission attached to that group. we can check a user's groups using groups username command**  
+
+- To create groups we can use **addgroup groupname** command
+- To add users to a group we can use **adduser username groupname**
+
 -------------------------------------------------
 
 ======================================================================

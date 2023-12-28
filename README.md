@@ -192,7 +192,7 @@ ncal -3hMj       : will print the the previous current next month with monday as
 </pre>
 =============================================================================
 
-Udemy Linux Commands:
+### Udemy Linux Course:
 
 ======================================================================
 ### Getting Help in Linux:
@@ -201,7 +201,7 @@ Operating System by default comes with some manual pages. Manual pages are helpf
 
 **Help commands in linux are:**
 
-- man               : used to print manual of commands i.e thier usage, options and all the info regarding a command
+- **man**               : used to print manual of commands i.e thier usage, options and all the info regarding a command
 
   Syntax: 
     man command
@@ -526,38 +526,38 @@ Usage:
 
 ======================================================================
 
-Expansion in Linux:
+### Expansion in Linux:
 
 -------------------------------------------------
 Expansions are of several types in linux.  Pathname expansion, tilde expansion, arithmetic expansion
 Pathname extension uses several symbols which have their meaning. characters/symbols such as *, [], $. We can use special wildcard characters to build patterns that can match multiple files at once.
 
 -------------------------------------------------
-The asterik ( * ) character represents zero or more characters in a filename. e.g ls *.css , cat blue* will match every file with a css extension and every file starting with blue word respectively.  another example can be echo *file* will match that has file word in it
+- The asterik ( * ) character represents zero or more characters in a filename. e.g ls *.css , cat blue* will match every file with a css extension and every file starting with blue word respectively.  another example can be echo *file* will match that has file word in it
 
 -------------------------------------------------
-The question mark ( ? )  character reprsents any single character.        e.g  ls app.?? will match any file with two extension having two characters  app.js , app.py etc      ls pic?.png will result in pic2, pic1, or any picA.png files if present in current directory
+- The question mark ( ? )  character reprsents any single character.        e.g  ls app.?? will match any file with two extension having two characters  app.js , app.py etc      ls pic?.png will result in pic2, pic1, or any picA.png files if present in current directory
 
 -------------------------------------------------
-The [] characters can be used to match a range of characters. eg. ls pic[123].png  will only match pic1.png, pic2.png and pic3.png ls [A-F]* will match any files or folder starting with letters from A to F. ls pic[1-9].png will list pic1 to pic9
+- The [] characters can be used to match a range of characters. eg. ls pic[123].png  will only match pic1.png, pic2.png and pic3.png ls [A-F]* will match any files or folder starting with letters from A to F. ls pic[1-9].png will list pic1 to pic9
 
 -------------------------------------------------
-Remember with these characters we can not only use ls or echo, we can use cp, mv, rm which is useful with these commands and any command that takes files as an argument or standard input we can use it. Also these symbols can be used with each other to create more complex patterns for our use cases. 
+- Remember with these characters we can not only use ls or echo, we can use cp, mv, rm which is useful with these commands and any command that takes files as an argument or standard input we can use it. Also these symbols can be used with each other to create more complex patterns for our use cases. 
 
 -------------------------------------------------
-Negating ranges : inside of square [] brackets we can specify a range of characters not to match using symbol caret ( ^ ) . E.g ls [^a]* will match any files that do not start with character a. ls [ ^0-9]* will match any files that do not start with a numeric digit. echo [^Cc] to not match any files with upper C or lower c
+- Negating ranges : inside of square [] brackets we can specify a range of characters not to match using symbol caret ( ^ ) . E.g ls [^a]* will match any files that do not start with character a. ls [ ^0-9]* will match any files that do not start with a numeric digit. echo [^Cc] to not match any files with upper C or lower c
 
 -------------------------------------------------
-Tilde ( ~ ) is expanded to home directory of the current user. when we do cd ~ it redirects us to our current user home directory.
+- Tilde ( ~ ) is expanded to home directory of the current user. when we do cd ~ it redirects us to our current user home directory.
 
 -------------------------------------------------
-Brace Expansion basically generates multiple strings for us based on a pattern. we provide set of strings inside curly braces { } as well as surrounding suffixes and prefixes . e.g touch file{1,2,3}.txt will generate  file1,file2,file3 altogether. Useful when creating files and folders faster. We can also create nested brace expression echo {A,{a..z},Z}
+- Brace Expansion basically generates multiple strings for us based on a pattern. we provide set of strings inside curly braces { } as well as surrounding suffixes and prefixes . e.g touch file{1,2,3}.txt will generate  file1,file2,file3 altogether. Useful when creating files and folders faster. We can also create nested brace expression echo {A,{a..z},Z}
 
 -------------------------------------------------
-Arithmetic expansion can be done in terminal. Shell does it using $((expression)) e.g echo $((5%3))
+- Arithmetic expansion can be done in terminal. Shell does it using $((expression)) e.g echo $((5%3))
 
 -------------------------------------------------
-Command substitution in linux is done using $(command)
+- Command substitution in linux is done using $(command)
 
 -------------------------------------------------
 
@@ -646,26 +646,25 @@ Using grep we can do a recursive search  using a -r option which will include al
 - grep "grass" SongOfMyself.txt -m2
 
 -------------------------------------------------
-We can provide regular expression to grep command in pattern. Regular expressions help us match complex patterns.  in case of grep there are symbols which have specific meanings to it.
+**We can provide regular expression to grep command in pattern. Regular expressions help us match complex patterns.  in case of grep there are symbols which have specific meanings to it.**
+
+- dot ( . )  matches any single character. e.g  grep "r.." SongOfMyself.txt  matches any word that starts with r and and has two or more characters in it for exactly two character after r we can use it with -w flag. e.g grep "r.." SongOfMyself.txt -w
 
 -------------------------------------------------
-dot ( . )  matches any single character. e.g  grep "r.." SongOfMyself.txt  matches any word that starts with r and and has two or more characters in it for exactly two character after r we can use it with -w flag. e.g grep "r.." SongOfMyself.txt -w
+- Power ( ^ ) matches any start of the line. e.g grep "^r" SongOfMyself.txt -i
 
 -------------------------------------------------
-Power ( ^ ) matches any start of the line. e.g grep "^r" SongOfMyself.txt -i
+- Dollar ( $ ) matches any end of the line . e.g grep ")$" SongOfMyself.txt        or    grep ",$" SongOfMyself.txt
 
 -------------------------------------------------
-Dollar ( $ ) matches any end of the line . e.g grep ")$" SongOfMyself.txt        or    grep ",$" SongOfMyself.txt
+- [abc] matches any character in the set. e.g grep "[abc]" SongOfMyself.txt -w or we can use with '.' for better searching: e.g grep "[abc].." SongOfMyself.txt -w     or grep "r[abc]" SongOfMyself.txt 
 
 -------------------------------------------------
-[abc] matches any character in the set. e.g grep "[abc]" SongOfMyself.txt -w or we can use with '.' for better searching: e.g grep "[abc].." SongOfMyself.txt -w     or grep "r[abc]" SongOfMyself.txt 
-
--------------------------------------------------
-[^abc] match any character not in the set . eg. grep "[^abc]" SongOfMyself.txt -w
+- [^abc] match any character not in the set . eg. grep "[^abc]" SongOfMyself.txt -w
 
 -------------------------------------------------
 
-[A-Z] matches characters in range . e.g grep "2[1-6]" SongOfMyself.txt  or grep "2[^1-6]" SongOfMyself.txt 
+- [A-Z] matches characters in range . e.g grep "2[1-6]" SongOfMyself.txt  or grep "2[^1-6]" SongOfMyself.txt 
 or grep "r[a-c]" SongOfMyself.txt
 
 -------------------------------------------------
@@ -673,13 +672,12 @@ Simple grep will ignore some the special characters but we can use extended grep
 
 -------------------------------------------------
 
-grep -E "[aeiou]{2}" SongOfMyself.txt here {2} tells that two voewels with each other
+- grep -E "[aeiou]{2}" SongOfMyself.txt here {2} tells that two voewels with each other
 
-Grep can be used with other commands using Pipes and is most useful.
+**Grep can be used with other commands using Pipes and is most useful.**
 
 -------------------------------------------------
 find ~/Learning/Linux/ -type f | xargs grep gatsby
-
 
 ======================================================================
 
@@ -742,15 +740,16 @@ Chmod actually uses two types of notations. symbolic as we saw above and there i
 **The octal representation starts from 0 to 7 ( 0,1,2,3,4,5,6,7,8). The binary representation of all these number is different and we can use it to change the permission of a file and folder.**
 
 -------------------------------------------------
+<pre>
 0     0 0 0     - - -  
-1     0 0 1     - - x 
-2     0 1 0     - w -  
-3     0 1 1     - r x  
-4     1 0 0     r - -  
-5     1 0 1     r - x 
-6     1 1 0     r w - 
-7     1 1 1     r w x
-
+1     0 0 1     - - x  
+2     0 1 0     - w -    
+3     0 1 1     - r x    
+4     1 0 0     r - -    
+5     1 0 1     r - x   
+6     1 1 0     r w -   
+7     1 1 1     r w x  
+</pre>
 -------------------------------------------------
 Example usage:
 - chmod 700 file mean rwx permission for user, no permission for group and no permission for others

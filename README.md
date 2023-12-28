@@ -716,7 +716,7 @@ echo $PATH gives us the path variable that actually stores the executable progra
 which echo  or whereis echo  will give us the path  where is echo defined in our OS and the path for echo and all other commands is stored in $PATH variable and thats how it was able to run it
 <pre>
 echo $PATH 
-/home/raja-muneer-baigal/.nvm/versions/node/v16.20.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/raja-muneer-baigal/.dotnet/tools
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/raja-muneer-baigal/.dotnet/tools
 
 </pre>
 -------------------------------------------------
